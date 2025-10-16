@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!-- Define o tipo do documento como HTML5 -->
+<html lang="pt-BR"> <!-- Informa que o idioma principal da página é português do Brasil -->
+<head>
+    <meta charset="UTF-8"> <!-- Define o padrão de caracteres (UTF-8) para suportar acentos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Faz o site se ajustar ao tamanho da tela (responsivo) -->
+    <title>Tabelas e Formulários</title> <!-- Título que aparece na aba do navegador -->
+</head>
+<body>
+    <!-- Título principal da página -->
+    <h1 align="center">Exemplos de Tabelas e Formulários</h1> 
+
+    <!-- Subtítulo para a seção de tabela -->
+    <h2 align="center">Tabela de Frutas</h2>
+
+    <!-- Criação da tabela centralizada e com borda -->
+    <table align="center" border="1">
+        <thead> <!-- Cabeçalho da tabela -->
+            <tr> <!-- Linha do cabeçalho -->
+                <th>Nome</th> <!-- Coluna de nome das frutas -->
+                <th>Preço</th> <!-- Coluna de preço das frutas -->
+            </tr>
+        </thead>
+        <tbody> <!-- Corpo da tabela com os dados -->
+            <tr>
+                <td>Maçã</td> <!-- Nome da fruta -->
+                <td>R$ 2,50</td> <!-- Preço -->
+            </tr>
+            <tr>
+                <td>Banana</td>
+                <td>R$ 1,00</td>
+            </tr>
+            <tr>
+                <td>Pêra</td>
+                <td>R$ 4,50</td>
+            </tr>
+            <tr>
+                <td>Melancia kg.</td>
+                <td>R$ 7,00</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Subtítulo para a seção de formulário -->
+    <h2 align="center">Formulário de Contato</h2>
+
+    <!-- Início do formulário centralizado -->
+    <!-- action="enviar.php" indica o arquivo que receberá os dados -->
+    <!-- method="post" envia os dados de forma mais segura (sem aparecer na URL) -->
+    <form align="center" action="enviar.php" method="post">
+        <!-- Campo de nome -->
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required><br><br> <!-- required torna obrigatório -->
+
+        <!-- Campo de email -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- Campo de senha -->
+        <!-- (corrigido o erro de digitação de <labal> para <label>) -->
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha"><br><br>
+
+        <!-- Campo de mensagem/pedido -->
+        <label for="mensagem">Fazer pedido:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" cols="50"></textarea><br><br>
+
+        <!-- Botão para enviar o formulário -->
+        <input type="submit" value="Enviar"> <!-- Botão de envio -->
+    </form>
+</body>
+</html>
+
