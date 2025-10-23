@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Pessoal - Caick Ruan</title>
+
+    <style>
+        body {
+            color: white;
+            text-align: center;
+            background: url("/ATV HTML 2/img/fundo.png") no-repeat center center fixed;
+            background-size: cover;
+        }
+
+        .listas {
+            display: flex;
+            justify-content: center;
+            gap: 80px;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        ul, ol {
+            list-style-position: inside;
+            padding-left: 0;
+            text-align: left;
+            border: 2px solid white;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 20px;
+            width: 250px;
+        }
+
+        li {
+            margin: 6px 0;
+        }
+
+        table {
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid white;
+            padding: 8px;
+        }
+
+        hr {
+            width: 60%;
+        }
+
+        button {
+            background-color: lightblue;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: deepskyblue;
+        }
+
+        a {
+            color: lightblue;
+        }
+    </style>
+</head>
+
+<body link="lightblue" vlink="lightgray" alink="yellow">
+
+    <header>
+        <h1>Caick Ruan da Silva Santana</h1>
+        <h2>Bem-vindo(a) à minha página pessoal!</h2>
+        <hr>
+    </header>
+
+    <section>
+        <h3>Sobre Mim</h3>
+        <p>
+            Olá! Meu nome é <strong>Caick Ruan</strong>. Sou estudante de engenharia de software e gosto de aprender ao máximo<br> sobre tecnologia e programação.
+            Nesta página você vai conhecer um pouco mais sobre mim, meus hobbies e minha rotina.
+        </p>
+        <img src="/ATV HTML 2/img/perfil.jpg" alt="Foto de Caick Ruan" width="200" height="250">
+    </section>
+
+    <hr>
+
+    <section>
+        <h3>Hobbies e Metas</h3>
+        <div class="listas">
+            <div>
+                <h4>Meus Hobbies e Interesses</h4>
+                <ul type="square">
+                    <li>Jogar Games 🎮</li>
+                    <li>Ouvir música 🎧</li>
+                    <li>Ler livros 📚</li>
+                    <li>Assistir séries e filmes 🍿</li>
+                    <li>Aprender programação 💻</li>
+                </ul>
+            </div>
+
+            <div>
+                <h4>Minhas Metas Pessoais</h4>
+                <ol>
+                    <li>Concluir o curso com boas notas.</li>
+                    <li>Aprender novas linguagens e lógicas de programação.</li>
+                    <li>Trabalhar na área de desenvolvimento de software.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section>
+        <h3>Minha Rotina Semanal</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Dia</th>
+                    <th>Atividade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>Segunda-feira</td><td>Aulas e Estudos</td></tr>
+                <tr><td>Terça-feira</td><td>Aula, exercícios físicos e prática de programação</td></tr>
+                <tr><td>Quarta-feira</td><td>Aula, exercícios físicos e jogos</td></tr>
+                <tr><td>Quinta-feira</td><td>Aula, exercícios físicos, estudos e jogos</td></tr>
+                <tr><td>Sexta-feira</td><td>Estudos, lazer e descanso</td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <hr>
+
+    <section>
+        <h3>Entre em Contato</h3>
+        <form action="#" method="post">
+            <label for="nome">Nome:</label><br>
+            <input type="text" id="nome" name="nome" required><br><br>
+
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="mensagem">Mensagem:</label><br>
+            <textarea id="mensagem" name="mensagem" rows="4" cols="40" placeholder="Digite sua mensagem aqui..." required></textarea><br><br>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <footer>
+        <p>&copy; 2025 - Desenvolvido por <strong>Caick Ruan</strong> | 
+        <a href="https://github.com/DevNaur" target="_blank">Meu GitHub</a></p>
+    </footer>
+</body>
+</html>
+
