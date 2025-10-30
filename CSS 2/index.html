@@ -1,54 +1,116 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS em listas e tabelas</title>
+    <title>Catálogo de Filmes</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-     <h2>Exemplo de Listas</h2>
 
-    <ul class="lista1">
-        <li>Item com marcador quadrado</li>
-        <li>Outro item</li>
-    </ul>
+    <nav>
+        <ul class="menu">
+            <li><a href="#destaque">Destaque</a></li>
+            <li><a href="#catalogo">Catálogo</a></li>
+            <li><a href="#tabela">Lançamentos</a></li>
+            <li><a href="#sobre">Sobre/Contato</a></li>
+        </ul>
+    </nav>
 
-    <ol class="lista2">
-        <li>Primeiro item em algarismo romano</li>
-        <li>Segundo item</li>
-    </ol>
+    <header>
+        <h1>🎬 Catálogo de Filmes</h1>
+        <h2>Os melhores títulos para você assistir</h2>
+    </header>
 
-    <ul class="lista1">
-        <li>Item com marcador de imagem</li>
-        <li>Mais um item</li>
-    </ul>
+    <section id="destaque">
+        <h2>Destaque da Semana</h2>
+        <div class="card-destaque">
+            <img src="f4.webp" alt="Poster do Filme">
+            <div class="info-filme">
+                <h3>O Grande Herói</h3>
+                <p>Um soldado luta pela sobrevivência em meio a uma missão perigosa e solitária. Baseado em fatos reais.</p>
+                <ul>
+                    <li>Ação</li>
+                    <li>Drama</li>
+                    <li>Guerra</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="catalogo">
+        <h2>Catálogo</h2>
+        <div class="grade-filmes">
+            <div class="card">
+                <img src="f1.webp" alt="Poster">
+                <a href="#"><h3>Demon slayer:Castelo infinito </h3></a>
+                <p>2024 • Ficção Científica</p>
+            </div>
+
+            <div class="card">
+                <img src="f2.webp" alt="Poster">
+                <a href="#"><h3>O Rei Leão</h3></a>
+                <p>1994 • Animação</p>
+            </div>
+
+            <div class="card">
+                <img src="f3.webp" alt="Poster">
+                <a href="#"><h3>Telefone Preto 2</h3></a>
+                <p>2025 • Terror</p>
+            </div>
+        </div>
+    </section>
 
 
-    <h2>Exemplo de Tabela</h2>
+    <section id="tabela">
+        <h2>Lançamentos e Prêmios</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Filme</th>
+                    <th>Ano</th>
+                    <th>Nota</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Avatar 3</td>
+                    <td>2025</td>
+                    <td>--</td>
+                    <td>Em breve</td>
+                </tr>
+                <tr>
+                    <td>Duna: Parte 2</td>
+                    <td>2024</td>
+                    <td>9.1</td>
+                    <td>Em exibição</td>
+                </tr>
+                <tr>
+                    <td>Wicked Para Sempre</td>
+                    <td>2025</td>
+                    <td>—</td>
+                    <td>Em breve</td>
+                </tr>
+                <tr>
+                    <td>Batman</td>
+                    <td>2022</td>
+                    <td>8.0</td>
+                    <td>Lançado</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
-    <table class="tabela">
-        <tr>
-            <th>Nome</th>
-            <th>Idade</th>
-            <th>Cidade</th>
-        </tr>
-        <tr>
-            <td>Ana</td>
-            <td>25</td>
-            <td>Salvador</td>
-        </tr>
-        <tr>
-            <td>Pedro</td>
-            <td>30</td>
-            <td>Recife</td>
-        </tr>
-        <tr>
-            <td>Maria</td>
-            <td>28</td>
-            <td>Fortaleza</td>
-        </tr>
-    </table>
-    
+    <section id="sobre">
+        <h2>Sobre / Contato</h2>
+        <p>
+            <img src="logo.png" alt="Foto" class="foto" width="150" height="150">
+            Este catálogo foi desenvolvido como prática de CSS e HTML, aplicando conceitos de layout, tipografia e listas. 
+            <br><br>
+            Contato: <a href="https://www.instagram.com/caick_ruan/">Instagram</a> | <a href="https://github.com/DevNaur?tab=repositories">GitHub</a> | <a href="Caickruan2@gmail.com">E-mail</a>
+        </p>
+    </section>
+
 </body>
 </html>
