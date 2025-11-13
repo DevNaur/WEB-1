@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivinhe a palavra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Adivinhe a Palavra</h1>
+
+    <section class="game-container">
+
+        <div class="image-box">
+            <img src="imgs/menino1.png" id="img-menino" alt="Menino do jogo">
+        </div>
+
+        <button id="btn_iniciar" class="start-button">▶ Iniciar</button>
+
+        <div class="word-box">
+            <p id="palavra"></p>
+        </div>
+
+        <button id="btn_dica" class="hint-button">💡 Mostrar Dica</button>
+
+        <div id="box-dica" class="dica escondido">
+            <p id="texto-dica"></p>
+        </div>
+
+        <div id="box-teclado" class="keyboard"></div>
+
+    </section>
+
+    <footer>
+        redes sociais:
+    <a href="https://github.com/DevNaur" target="_blank" rel="noopener">Github</a>
+    |
+    <a href="https://www.instagram.com/caick_ruan/#" target="_blank" rel="noopener">Instagram</a>
+    </footer>
+
+    <script src="interaction.js"></script>
+</body>
+
+</html>

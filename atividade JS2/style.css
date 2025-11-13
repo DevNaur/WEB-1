@@ -1,0 +1,207 @@
+/* ===== ESTILO GERAL CARTOON ===== */
+body {
+    background: #bd73e9;
+    margin: 0;
+    padding: 0;
+    font-family: "Comic Sans MS", "Fredoka", Arial, sans-serif;
+    color: #ffffff;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 42px;
+    color: #f5f5f5;
+    text-shadow: 3px 3px 0px #14021f50;
+}
+
+
+.game-container {
+    width: 420px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #b406e9;
+    border-radius: 20px;
+    border: 4px solid #9c00f7;
+    box-shadow: 8px 8px 0px #01000250;
+}
+
+
+.image-box {
+    background: #e3a7ff;
+    border: 4px solid #000000;
+    border-radius: 15px;
+    height: 160px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-shadow: 5px 5px 0px #7d0488;
+}
+
+#img-menino {
+    height: 100%;
+    filter: drop-shadow(6px 4px 0px #0000008f);
+    transition: transform 0.3s ease;
+}
+
+#img-menino:hover {
+    transform: scale(1.05);
+}
+
+/* ===== BOTÃO INICIAR ===== */
+.start-button {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+
+    font-size: 26px;
+    font-weight: bold;
+
+    background: #db38ce;
+    color: #ffffff;
+    border: 4px solid #000000;
+    border-radius: 15px;
+
+    box-shadow: 6px 6px 0px #7e1a8b;
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.start-button:hover {
+    background: #9c09e0;
+    transform: translate(-3px, -3px);
+    box-shadow: 9px 9px 0px #49020240;
+}
+
+/* ===== PALAVRA ===== */
+.word-box {
+    background-color: #e3a7ff;
+    border: 4px solid #000000;
+    border-radius: 15px;
+
+    height: 60px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: 5px 5px 0px #741d80;
+}
+
+#palavra {
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: 6px;
+}
+
+
+.hint-button {
+    width: 100%;
+    padding: 12px;
+
+    font-size: 22px;
+    font-weight: bold;
+
+    background: #eee786;
+    color: #000000;
+
+    border: 4px solid #000000;
+    border-radius: 15px;
+
+    box-shadow: 5px 5px 0px #6c167e;
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.hint-button:hover {
+    background: #f9ffa2;
+    transform: translate(-3px, -3px);
+    box-shadow: 8px 8px 0px #00000050;
+}
+
+.hint-button:disabled {
+    background: #ffe714;
+    color: #000000;
+}
+
+/* ===== CAIXA DA DICA ===== */
+.dica {
+    background: #e3a7ff;
+    border: 4px solid #4a2e16;
+    border-radius: 15px;
+
+    padding: 12px;
+    margin-bottom: 10px;
+
+    box-shadow: 5px 5px 0px #00000040;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.escondido {
+    display: none;
+}
+
+/* ===== TECLADO ===== */
+.keyboard {
+    background: #fff2d6;
+    padding: 15px;
+    border: 4px solid #4a2e16;
+    border-radius: 15px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+
+    box-shadow: 5px 5px 0px #00000040;
+}
+
+.tecla {
+    background: #fc52d7;
+    color: #000000;
+    font-weight: bold;
+    font-size: 22px;
+
+    border: 4px solid #4f0658;
+    border-radius: 10px;
+
+    padding: 12px 18px;
+    cursor: pointer;
+
+    box-shadow: 4px 4px 0px #3c0f49a4;
+
+    transition: 0.2s;
+}
+
+.tecla:hover {
+    background: #af1ab4;
+    transform: translate(-3px, -3px);
+    box-shadow: 7px 7px 0px #650691f8;
+}
+
+.tecla:disabled {
+    background: #fbceff;
+    color: #8b798d;
+    cursor: not-allowed;
+}
+
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+footer a {
+    color: #4564ee;
+    font-weight: bold;
+    text-decoration: none;
+}
+footer a:hover {
+    text-decoration: underline;
+}
